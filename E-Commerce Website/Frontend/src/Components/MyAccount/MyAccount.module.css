@@ -1,0 +1,106 @@
+.orders {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: -100;
+  max-height: 220px;
+  justify-content: left;
+  margin: 0 40px;
+  row-gap: 30px;
+  margin-top: 30px;
+  gap: 10px;
+}
+.orderitem:hover {
+  cursor: pointer;
+  background: rgb(214, 214, 214);
+}
+.orderitem {
+  min-height: 180px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content p {
+  font-size: medium;
+  font-weight: 500;
+  opacity: 70%;
+  margin-bottom: 10px;
+}
+.content span {
+  /* background: black; */
+  color: aliceblue;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: small;
+}
+.content :first-child {
+  font-size: medium;
+  font-weight: 600;
+}
+.myProfile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+}
+.myProfile h1 {
+  font-size: xx-large;
+  font-weight: 600;
+  opacity: 70%;
+  margin-bottom: 20px;
+}
+.myProfile h2 {
+  font-size: x-large;
+  font-weight: 500;
+  opacity: 70%;
+}
+.myProfile p {
+  font-size: large;
+  font-weight: 500;
+  opacity: 70%;
+  text-wrap: wrap;
+  margin-bottom: 30px;
+}
+.statusCancelled {
+  background: rgb(240, 0, 0);
+  color: aliceblue;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: small;
+}
+.statusDelivered {
+  background: rgb(11, 0, 0);
+  color: aliceblue;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: small;
+}
+.statusPlaced {
+  background: rgb(0, 83, 46);
+  color: aliceblue;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: small;
+}
+.statusTransit {
+  background: rgb(163, 150, 4);
+  color: aliceblue;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: small;
+}
+.userList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  column-gap: 10px;
+}
+.deltebtn:hover {
+  cursor: pointer;
+}

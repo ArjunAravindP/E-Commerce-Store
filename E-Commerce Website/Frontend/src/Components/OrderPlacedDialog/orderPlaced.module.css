@@ -1,0 +1,14 @@
+.dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.dialog span {
+  font-size: larger;
+  font-weight: 600;
+  opacity: 70%;
+  color: rgb(0, 0, 0);
+}

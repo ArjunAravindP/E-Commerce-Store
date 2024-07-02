@@ -1,0 +1,26 @@
+/* .addToCartButton:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.detailsButton:hover {
+  cursor: pointer;
+  color: black;
+  border: 1px solid black;
+} */
+.addToCartButton {
+  background-color: black;
+  color: white;
+}
+
+.detailsButton {
+  color: black;
+  border: 1px solid black;
+}
+.singleProductBuy {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2;
+  margin: 10px;
+}

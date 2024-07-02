@@ -1,0 +1,27 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  max-width: 100%;
+}
+.cartImage {
+  max-width: 70px;
+  border-radius: 10px;
+}
+.cartItem {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.adminProductButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 30px;
+}
+.adminProductButtons:hover {
+  cursor: pointer;
+}

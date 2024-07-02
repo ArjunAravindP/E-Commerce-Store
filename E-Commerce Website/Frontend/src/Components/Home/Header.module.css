@@ -1,0 +1,67 @@
+.section {
+  min-width: 100%;
+  max-height: 700px;
+  background: rgb(245, 255, 209);
+  background: linear-gradient(135deg, rgba(245, 255, 209, 1) 36%, rgba(251, 234, 197, 1) 58%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.section h1 {
+  font-size: 4em;
+  font-weight: 700;
+  margin: 0px;
+  width: auto;
+  margin-bottom: -30px;
+}
+
+.siteTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0;
+}
+.titleSpan {
+  font-weight: 400;
+}
+.para {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.grid {
+  display: flex;
+  text-align: center;
+}
+.collection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.gridItem {
+  display: flex;
+  max-width: 200px;
+  border-radius: 50px;
+  box-shadow: 10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.gridItem {
+  font-weight: 600;
+  font-size: large;
+  opacity: 70%;
+}
+.gridItem:hover {
+  cursor: pointer;
+}
+.title {
+  margin: 30px 0;
+}
+.collection span {
+  padding-left: 10px;
+}

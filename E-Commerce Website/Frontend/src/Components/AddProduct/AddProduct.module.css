@@ -1,0 +1,16 @@
+.formFileds {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-self: flex-end;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,114 @@
+.image {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  border-right: solid black;
+}
+.image img {
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: 9px 6px 30px -6px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 9px 6px 30px -6px rgba(0, 0, 0, 0.53);
+  box-shadow: 9px 6px 30px -6px rgba(0, 0, 0, 0.53);
+}
+.productDetails h2 {
+  font-size: 60px;
+  font-weight: 600;
+  margin: 20px;
+}
+.productDetails p {
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 70%;
+  margin: 0 20px;
+}
+.productPrice {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: baseline;
+}
+.productPrice p {
+  font-size: xx-large;
+  font-weight: 600;
+  opacity: 70%;
+  font-style: italic;
+}
+.productPrice :last-child {
+  font-size: x-large;
+  text-decoration: line-through;
+}
+.units {
+  margin-left: 20px;
+}
+.buyOptions {
+  margin-left: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 70px;
+}
+.buyOptions button {
+  width: 200px;
+  height: 60px;
+}
+.buyOptions button:hover {
+  cursor: pointer;
+}
+.buyNow {
+  background-color: white;
+  font-size: large;
+  font-weight: 800;
+  border-radius: 5px;
+  border: solid black;
+}
+.addToCart {
+  background-color: rgb(0, 0, 0);
+  font-size: large;
+  font-weight: 800;
+  color: white;
+  border-radius: 5px;
+}
+.productDescription {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.productDescription p {
+  padding-bottom: 10px;
+  border-bottom: solid rgb(183, 169, 169);
+  width: 80%;
+  font-size: small;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.notification {
+  position: fixed;
+  top: 120px;
+  right: 0;
+  width: 20%;
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+}
+.outOfStock {
+  color: rgb(190, 3, 3);
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: larger;
+  border: solid rgb(116, 116, 116);
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+}
+.alert {
+  position: absolute;
+  top: 100px;
+
+  right: 0;
+}

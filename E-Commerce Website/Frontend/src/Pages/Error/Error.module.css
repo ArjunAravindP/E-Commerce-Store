@@ -1,0 +1,16 @@
+.errorPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.errorPage h1 {
+  font-size: xx-large;
+  font-weight: 600;
+  opacity: 70%;
+}
+.errorPage h2 {
+  font-size: larger;
+  font-weight: 600;
+  opacity: 70%;
+}

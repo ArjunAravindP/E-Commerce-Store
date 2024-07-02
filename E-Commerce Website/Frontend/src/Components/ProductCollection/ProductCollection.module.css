@@ -1,0 +1,15 @@
+.allProducts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px;
+  justify-content: center;
+}
+.title {
+  font-size: xx-large;
+  text-align: center;
+  font-weight: 600;
+  opacity: 70%;
+  margin: 20px 0;
+}
