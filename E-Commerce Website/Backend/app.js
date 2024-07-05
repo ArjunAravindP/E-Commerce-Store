@@ -5,16 +5,15 @@ const mongoose = require('mongoose');
 const session = require('express-session');
 const MongodbStore = require('connect-mongodb-session')(session);
 const cors = require('cors');
+require('dotenv').config();
 const Auth = require('./Midleware/authenticate');
-const MongoDb = require('stripe')(process.env.MONGODB_CONNECTION);
+const connectionString = process.env.MONGODB_CONNECTION;
 
 require('dotenv').config();
 
 const errorController = require('./controllers/error');
 
 const User = require('./models/user');
-
-const MONGODB_URI = MongoDb;
 
 const app = express();
 app.use(
@@ -34,7 +33,7 @@ app.use((req, res, next) => {
 app.use(Auth);
 
 const store = new MongodbStore({
-  uri: MONGODB_URI,
+  uri: connectionString,
   collection: 'sessions',
 });
 
@@ -78,7 +77,7 @@ app.use(authRoutes);
 app.use(errorController.get404);
 
 mongoose
-  .connect(MONGODB_URI)
+  .connect(connectionString)
   .then((result) => {
     User.findOne().then((user) => {
       if (!user) {

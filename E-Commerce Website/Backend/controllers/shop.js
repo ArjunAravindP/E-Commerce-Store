@@ -5,6 +5,8 @@ const Order = require('../models/order');
 const { request, json } = require('express');
 const product = require('../models/product');
 const user = require('../models/user');
+const Contact = require('../models/contact');
+const { check, validationResult } = require('express-validator');
 
 exports.getIndex = (req, res, next) => {
   Product.find()
@@ -355,4 +357,26 @@ exports.getUser = (req, res, next) => {
     .catch((err) => {
       res.status(500).send({ message: 'User not found' });
     });
+};
+exports.contactForm = async (req, res, next) => {
+  const data = req.body;
+  const { name, email, phone, message } = req.body;
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() });
+  }
+  try {
+    const newContact = new Contact({
+      name,
+      email,
+      phone,
+      message,
+    });
+
+    await newContact.save();
+    res.status(200).json({ message: 'User added successfully' });
+  } catch (error) {
+    console.error('Error saving product:', error);
+    res.status(500).json({ message: 'Error adding product' });
+  }
 };

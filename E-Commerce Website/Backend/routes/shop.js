@@ -1,9 +1,23 @@
 const express = require('express');
 const router = express.Router();
 const cartController = require('../controllers/cart.js');
+const { check } = require('express-validator');
 
 // Dummy controller functions
 const shopController = require('../controllers/shop');
+const contactFormValidationRules = [
+  check('name').notEmpty().withMessage('Name is required'),
+  check('email').isEmail().withMessage('Email is invalid'),
+  check('phone')
+    .isLength({ min: 10, max: 10 })
+    .withMessage('Phone number must be exactly 10 digits')
+    .isNumeric()
+    .withMessage('Phone number must contain only numbers'),
+  check('message')
+    .optional()
+    .isString()
+    .withMessage('Message must be a string'),
+];
 
 router.get('/', shopController.getIndex);
 router.get('/products', shopController.getProducts);
@@ -23,5 +37,6 @@ router.get('/category/:category', shopController.getCategoryList);
 router.get('/collection/:title', shopController.getFullCollection);
 router.put('/cart/updatecart', cartController.updateCart);
 router.get('/fetchUser/:id', shopController.getUser);
+router.post('/contact', contactFormValidationRules, shopController.contactForm);
 
 module.exports = router;

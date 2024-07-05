@@ -38,7 +38,7 @@ const Navbar = () => {
       <nav className="nav container">
         <NavLink to="/" className="nav__logo">
           <img src={logo} alt="" />
-          <p>The Store</p>
+          <p> Furniture World</p>
         </NavLink>
 
         <div className={`nav__menu ${showMenu ? "show-menu" : ""}`} id="nav-menu">

@@ -18,6 +18,8 @@ import Collection from "./Components/Collection/Collection"
 import MyProfile from "./Components/MyAccount/Profile"
 import UserList from "./Components/MyAccount/Userlist"
 import NotFound from "./Pages/NotFound/NotFOund"
+import ContactUs from "./Pages/Conatct Us/Contact"
+import AboutUs from "./Pages/About Us/About"
 
 const router = createBrowserRouter([
   { path: "/auth", element: <AuthenticationPage />, action: authAction },
@@ -96,7 +98,12 @@ const router = createBrowserRouter([
             ]
           }
         ]
-      }
+      },
+      {
+        path: "contact",
+        element: <ContactUs />
+      },
+      { path: "about", element: <AboutUs /> }
     ]
   },
   { path: "*", element: <NotFound /> }

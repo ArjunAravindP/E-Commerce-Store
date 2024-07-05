@@ -6,6 +6,7 @@ import { cartActions } from "../Context/cart-slice"
 import NavbarHook from "../Components/NavBar/Nav"
 import { useSelector } from "react-redux"
 import AlertBox from "../Components/Alert/Alert"
+import Footer from "../Components/Footer/Footer"
 
 function RootLayout() {
   const cart = useSelector(state => state.cart.items)
@@ -31,6 +32,7 @@ function RootLayout() {
       <main style={{ marginTop: "90px" }}>
         <AlertBox />
         <Outlet />
+        <Footer />
       </main>
     </>
   )

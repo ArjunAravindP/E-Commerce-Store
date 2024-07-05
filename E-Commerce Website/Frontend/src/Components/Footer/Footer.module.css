@@ -1,0 +1,7 @@
+.nav__list {
+  display: flex;
+  flex-direction: column;
+}
+.nav__item {
+  margin-top: 10px;
+}
