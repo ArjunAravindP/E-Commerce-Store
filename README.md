@@ -32,7 +32,7 @@ This project is a full-featured e-commerce store for selling furniture, built wi
     cd backend
     npm run dev
     cd frontend
-    npm run start
+    npm run dev
     ```
 
 3. **Set up environment variables**: Create a `.env` file in the root directory and add your environment variables:
