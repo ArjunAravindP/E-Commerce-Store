@@ -30,10 +30,8 @@ This project is a full-featured e-commerce store for selling furniture, built wi
     ```bash
     cd backend
     npm install
-    npm run dev
     cd frontend
     npm install
-    npm run dev
     ```
 
 3. **Set up environment variables**: Create a `.env` file in the root directory and add your environment variables:
@@ -44,6 +42,9 @@ This project is a full-featured e-commerce store for selling furniture, built wi
 
 4. **Run the application**:
     ```bash
+    cd backend
+    npm run dev
+    cd frontend
     npm run dev
     ```
 
