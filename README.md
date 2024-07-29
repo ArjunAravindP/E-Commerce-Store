@@ -28,10 +28,11 @@ This project is a full-featured e-commerce store for selling furniture, built wi
 
 2. **Install dependencies**:
     ```bash
-    npm install
     cd backend
+    npm install
     npm run dev
     cd frontend
+    npm install
     npm run dev
     ```
 
